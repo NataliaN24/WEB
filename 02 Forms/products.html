@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+        <body>
+            <h1>Product</h1>
+            <br>
+            <form action="products.php" method="POST">
+                <div>
+                <label for="productName">Name of product:</label>
+                <input id="productName" type="text" name="product">
+                </div>
+                <br>
+                <div>
+                    <label for="priceOfProdut">Price of product:</label>
+                    <input id="priceOfProdut" type="number" name="Price">
+                </div>
+                <br>
+                <div>
+                    <label for="productType">Product Type:</label>
+                    <select id="productType" name="prodType">
+                        <option values="P1">Cosmetics</option>
+                        <option values="P2">Home Products</option>
+                        <option values="P3">Clothes</option>
+                    </select> 
+                </div><br>
+                <div> <textarea name="productDescription">Description of the product:</textarea></div>
+               <div>
+                    <label for="productCheck">Choose:</label><br>
+                    <input id="p1" type="checkbox" name="prod1" value="product1">
+                    <label for="p1">Product 01</label>
+                    <br>
+                    <input id="p2" type="checkbox" name="prod2" value="product2">
+                    <label for="p2">Product 02</label>
+               </div><br>
+               <input type="submit" name="SUBMIT:">
+            </form>
+        </body>
+    </html>
