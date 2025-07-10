@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма за регистрация</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+  <body>
+    <h1>Форма за регистрация</h1>
+
+    <form id="registration-form">
+      <label for="username">Потребителско име (3-10 символа):</label>
+      <input type="text" id="username" name="username" required minlength="3" maxlength="10">
+      <span class="error" id="username-error"></span>
+      <br><br>
+
+      <label for="name">Име:</label>
+      <input type="text" id="name" name="name" required maxlength="50">
+      <span class="error" id="name-error"></span>
+      <br><br>
+
+      <label for="family-name">Фамилия:</label>
+      <input type="text" id="family-name" name="family-name" required maxlength="50">
+      <span class="error" id="family-name-error"></span>
+      <br><br>
+
+      <label for="email">Имейл:</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="email-error"></span>
+      <br><br>
+
+      <label for="password">Парола:</label>
+      <input type="password" id="password" name="password" required>
+      <span class="error" id="password-error"></span>
+      <br><br>
+
+      <fieldset>
+        <legend>Адрес (по желание):</legend>
+
+        <label for="street">Улица:</label>
+        <input type="text" id="street" name="street">
+        <br><br>
+
+        <label for="city">Град:</label>
+        <input type="text" id="city" name="city">
+        <br><br>
+
+        <label for="postal-code">Пощенски код (формат 1111 или 11111-1111):</label>
+        <input type="text" id="postal-code" name="postal-code">
+        <span class="error" id="postal-code-error"></span>
+        <br><br>
+      </fieldset>
+
+      <button type="submit" id="register-btn">Регистрация</button>
+      <div id="success"></div>
+
+    </form>
+  </body>
+</html>
