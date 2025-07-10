@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на домашен любимец: Куче</title>
+    <link rel="stylesheet" href="dog.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="dog.png" alt="куче">
+        </div>
+        <div class="form-container">
+            <h1> Регистрирайте кучето си сега!</h1>
+            <form>
+                <label for="name">Име:</label>
+                <input type="text" placeholder="Име на домашния любимец" id="name" name="name" required>
+
+                <label for="photo">Избери снимка:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+                <label for="breed">Порода:</label>
+                <select id="breed" name="breed">
+                    <option value="">Изберете порода</option>
+                    <option value="bulldog">Булдог</option>
+                    <option value="labrador">Лабрадор</option>
+                    <option value="germanshepherd">Немска овчарка</option>
+                    <option value="poodle">Пудел</option>
+                    <option value="beagle">Бийгъл</option>
+                </select>
+                
+                <label for="birthday">Рожден ден:</label>
+                <input type="date" id="birthday" name="birthday">
+                
+                <label>Пол:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Мъжки</label>
+                    <label><input type="radio" name="gender" value="female"> Женски</label>
+                </div>
+                
+                <label for="weight">Тегло (кг):</label>
+                <input type="number" id="weight" name="weight" placeholder="Тегло (кг):" min="0" step="0.1">
+
+                <div class="navigation-buttons">
+                    <button type="button">Назад</button>
+                    <button type="button">Напред</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
